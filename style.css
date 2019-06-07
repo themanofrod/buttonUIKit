@@ -1,0 +1,126 @@
+:root {
+	--primary-color: rgb(225, 150, 75);
+	--primary-ascent-color: rgba(225, 150, 75, .5);
+	--secondary-color: rgb(175, 150, 100);
+	--secondary-ascent-color: rgba(175, 150, 100, .5);
+	--tertiary-color: rgb(150, 150, 125);
+	--tertiary-ascent-color: rgba(150, 150, 125, .5);
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: rgb(220, 220, 230);
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+	font-size: 3rem;
+	letter-spacing: .1rem;
+}
+
+h2 {
+	letter-spacing: .075rem;
+}
+
+/* Buttons */
+
+.buttons-container {
+	margin: auto;
+	padding: 2rem;
+	border-radius: 2rem;
+}
+
+.button {
+	border: transparent;
+	border-radius: 2rem;
+	margin: .25rem;
+	padding: .5rem 2rem;
+	font-size: 1rem;
+	color: #eee;
+	transition: all .3s ease;
+	cursor: pointer;
+}
+
+.button-larger {
+	font-size: 1.5rem;
+	padding: .75rem 2.25rem;
+}
+
+.button-large {
+	font-size: 1.25rem;
+	padding: .75rem 2.25rem;
+}
+
+.button-small {
+	font-size: .75rem;
+	padding: .5rem 1.25rem;
+}
+
+/* Button Events */
+
+div .button:active {
+	opacity: .7;
+	transform: translate(0, 0);
+	box-shadow: none;
+}
+
+.button:hover,
+.button:focus,
+.button-primary-hover,
+.button-secondary-hover,
+.button-tertiary-hover {
+	transform: translate(-.2rem, -.4rem);
+}
+
+.button:disabled {
+	pointer-events: none;
+	opacity: .6;
+}
+
+/* Primary Button */
+
+.button-primary {
+	background-color: var(--primary-color);
+}
+
+.button-primary-disabled {
+	background-color: var(--primary-ascent-color)
+}
+
+.button-primary:hover, .button-primary:focus, .button-primary-hover {
+	box-shadow: .2rem .4rem var(--primary-ascent-color);
+	outline: none;
+}
+
+/* Seconday Button */
+
+.button-secondary {
+	background-color: var(--secondary-color);;
+}
+
+.button-secondary-disabled {
+	background-color: var(--secondary-ascent-color)
+}
+
+.button-secondary:hover, .button-secondary:focus, .button-secondary-hover {
+	box-shadow: .2rem .4rem var(--secondary-ascent-color);
+	outline: none;
+}
+
+/* Tertiary Button*/
+
+.button-tertiary {
+	background-color: var(--tertiary-color);
+}
+
+.button-tertiary-disabled {
+	background-color: var(--tertiary-ascent-color)
+}
+
+.button-tertiary:hover, .button-tertiary:focus, .button-tertiary-hover {
+	box-shadow: .2rem .4rem var(--tertiary-ascent-color);
+	outline: none;
+}
